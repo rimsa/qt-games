@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="dot">images/dot.png</file>
+        <file alias="dotts">images/dotts.png</file>
+    </qresource>
+</RCC>
