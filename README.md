@@ -4,3 +4,4 @@ Supported games:
   - Sudoku
   - PegSolitaire
   - Dots and Boxes
+  - Reversi
