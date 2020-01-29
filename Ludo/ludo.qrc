@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/pawns">
+        <file alias="yellow">images/pawns/yellow.png</file>
+        <file alias="red">images/pawns/redx.png</file>
+        <file alias="green">images/pawns/green.png</file>
+        <file alias="blue">images/pawns/blue.png</file>
+        <file alias="empty">images/pawns/empty.png</file>
+    </qresource>
+    <qresource prefix="/dices">
+        <file alias="face6">images/dices/face6.png</file>
+        <file alias="face5">images/dices/face5.png</file>
+        <file alias="face4">images/dices/face4.png</file>
+        <file alias="face3">images/dices/face3.png</file>
+        <file alias="face2">images/dices/face2.png</file>
+        <file alias="face1">images/dices/face1.png</file>
+    </qresource>
+    <qresource prefix="/others">
+        <file alias="dot">images/others/dot.png</file>
+    </qresource>
+</RCC>

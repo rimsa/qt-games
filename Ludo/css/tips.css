@@ -1,0 +1,16 @@
+red: #ff3333
+yellow: #ffff33
+green: #33ff33
+blue: #3333ff
+
+
+border-width: 37px 37px 38px 38px;
+border-style: solid;
+border-color: #ff3333 #33ff33 #ffff33 #3333ff;
+width: 75px;
+height: 75px;
+
+border-width: 1px 1px 1px 1px;
+border-style: solid;
+border-color: black;
+background-color: white;
