@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>194</width>
-    <height>241</height>
+    <height>247</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -264,39 +264,35 @@
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuNew">
+   <widget class="QMenu" name="menuArquivo">
     <property name="title">
-     <string>File</string>
+     <string>Arquivo</string>
     </property>
-    <addaction name="actionNew"/>
+    <addaction name="actionNovo"/>
     <addaction name="actionSair"/>
    </widget>
-   <widget class="QMenu" name="menuHelp">
+   <widget class="QMenu" name="menuAjuda">
     <property name="title">
-     <string>Help</string>
+     <string>Ajuda</string>
     </property>
+    <addaction name="actionSobre"/>
    </widget>
-   <addaction name="menuNew"/>
-   <addaction name="menuHelp"/>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuAjuda"/>
   </widget>
-  <action name="actionNew">
+  <action name="actionNovo">
    <property name="text">
-    <string>New</string>
-   </property>
-  </action>
-  <action name="actionAbout">
-   <property name="text">
-    <string>About</string>
-   </property>
-  </action>
-  <action name="actionAbout_2">
-   <property name="text">
-    <string>About</string>
+    <string>Novo</string>
    </property>
   </action>
   <action name="actionSair">
    <property name="text">
     <string>Sair</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="text">
+    <string>Sobre</string>
    </property>
   </action>
  </widget>

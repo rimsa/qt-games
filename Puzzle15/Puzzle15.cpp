@@ -5,6 +5,7 @@
 #include <QSignalMapper>
 #include <QtGlobal>
 #include <QTime>
+#include <QMessageBox>
 
 Puzzle15::Puzzle15(QWidget *parent) :
     QMainWindow(parent),
@@ -32,8 +33,10 @@ Puzzle15::Puzzle15(QWidget *parent) :
     }
 
     QObject::connect(mapper, SIGNAL(mapped(int)), this, SLOT(handleTileChange(int)));
-
-    this->updateMovements();
+    QObject::connect(ui->actionNovo, SIGNAL(triggered(bool)), this, SLOT(shuffleTiles()));
+    QObject::connect(ui->actionSair, SIGNAL(triggered(bool)), qApp, SLOT(quit()));
+    QObject::connect(ui->actionSobre, SIGNAL(triggered(bool)), this, SLOT(showAbout()));
+    QObject::connect(this, SIGNAL(gameOver()), this, SLOT(showGameOver()));
 
     this->shuffleTiles();
 }
@@ -79,7 +82,18 @@ void Puzzle15::moveTile(QPushButton* from, QPushButton* to) {
     to->setText(tmp);
     to->setEnabled(true);
 
-    this->updateMovements();
+    this->updateMovements(++m_moves);
+
+    this->checkBoard();
+}
+
+void Puzzle15::checkBoard() {
+    for (int i = 1; i < 9; i++) {
+        if (this->tile(i)->text() != QString("%1").arg(i))
+            return;
+    }
+
+    emit gameOver();
 }
 
 void Puzzle15::handleTileChange(int tileNumber) {
@@ -106,8 +120,8 @@ void Puzzle15::handleTileChange(int tileNumber) {
         this->moveTile(current, right);
 }
 
-void Puzzle15::updateMovements() {
-    ui->statusBar->showMessage(QString("Movimentos: %1").arg(m_moves++));
+void Puzzle15::updateMovements(int moves) {
+    ui->statusBar->showMessage(QString("Movimentos: %1").arg(moves));
 }
 
 void Puzzle15::shuffleTiles() {
@@ -131,4 +145,15 @@ void Puzzle15::shuffleTiles() {
         button->setText(tileName);
         button->setEnabled(tileName != "");
     }
+
+    m_moves = 0;
+    this->updateMovements(m_moves);
+}
+
+void Puzzle15::showAbout() {
+    QMessageBox::information(this, tr("Sobre"), tr("Puzzle15\n\nAndrei Rimsa Alvares - andrei@cefetmg.br"));
+}
+
+void Puzzle15::showGameOver() {
+    QMessageBox::information(this, tr("Vencedor"), QString("Parabéns, você venceu com %1 jogadas").arg(m_moves));
 }

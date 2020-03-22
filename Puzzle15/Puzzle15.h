@@ -30,11 +30,17 @@ private:
 
     bool canMoveTo(QPushButton* button) const;
     void moveTile(QPushButton* from, QPushButton* to);
+    void checkBoard();
+
+signals:
+    void gameOver();
 
 private slots:
     void handleTileChange(int tileNumber);
-    void updateMovements();
+    void updateMovements(int moves);
     void shuffleTiles();
+    void showAbout();
+    void showGameOver();
 
 };
 
