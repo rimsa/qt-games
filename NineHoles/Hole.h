@@ -30,6 +30,9 @@ public:
     Hole::State state() const { return m_state; }
     void setState(Hole::State state);
 
+public slots:
+    void reset();
+
 signals:
     void stateChanged(Hole::State state);
 

@@ -17,6 +17,11 @@ void Hole::setState(Hole::State state) {
     }
 }
 
+void Hole::reset() {
+    m_state = Hole::EmptyState;
+    this->updateHole(m_state);
+}
+
 QPixmap Hole::state2pixmap(Hole::State state) {
     switch (state) {
         case Hole::EmptyState:
