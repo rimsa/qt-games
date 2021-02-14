@@ -6,3 +6,4 @@ Supported games:
   - Dots and Boxes
   - Reversi
   - Nine Holes
+  - Achi
