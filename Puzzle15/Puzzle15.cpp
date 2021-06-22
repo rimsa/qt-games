@@ -6,6 +6,9 @@
 #include <QtGlobal>
 #include <QTime>
 #include <QMessageBox>
+#if QT_VERSION >= QT_VERSION_CHECK(6,0,0)
+#include <QRandomGenerator>
+#endif
 
 Puzzle15::Puzzle15(QWidget *parent) :
     QMainWindow(parent),
@@ -14,7 +17,9 @@ Puzzle15::Puzzle15(QWidget *parent) :
 
     ui->setupUi(this);
 
+#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
     qsrand(QTime::currentTime().msec());
+#endif
 
     QList<QPushButton*> tiles;
     tiles << ui->tile1 << ui->tile2 << ui->tile3
@@ -31,8 +36,12 @@ Puzzle15::Puzzle15(QWidget *parent) :
 
         number++;
     }
-
+#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
     QObject::connect(mapper, SIGNAL(mapped(int)), this, SLOT(handleTileChange(int)));
+#else
+    QObject::connect(mapper, SIGNAL(mappedInt(int)), this, SLOT(handleTileChange(int)));
+#endif
+
     QObject::connect(ui->actionNovo, SIGNAL(triggered(bool)), this, SLOT(shuffleTiles()));
     QObject::connect(ui->actionSair, SIGNAL(triggered(bool)), qApp, SLOT(quit()));
     QObject::connect(ui->actionSobre, SIGNAL(triggered(bool)), this, SLOT(showAbout()));
@@ -132,7 +141,12 @@ void Puzzle15::shuffleTiles() {
 
     QStringList shuffle;
     while (list.count() > 0) {
-        QString tileName = list[qrand() % list.count()];
+#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
+        int r = qrand() % list.count();
+#else
+        int r = QRandomGenerator::global()->bounded(list.count());
+#endif
+        QString tileName = list[r];
 
         shuffle << tileName;
         list.removeAll(tileName);

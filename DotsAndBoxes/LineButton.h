@@ -2,8 +2,7 @@
 #define LINEBUTTON_H
 
 #include <QPushButton>
-
-class Player;
+#include <Player.h>
 
 class LineButton : public QPushButton {
     Q_OBJECT

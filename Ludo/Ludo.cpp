@@ -1,6 +1,8 @@
 #include "Ludo.h"
 #include "ui_Ludo.h"
 
+#include <QActionGroup>
+
 Ludo::Ludo(QWidget *parent) :
     QMainWindow(parent), ui(new Ui::Ludo) {
     ui->setupUi(this);

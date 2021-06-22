@@ -48,7 +48,11 @@ NineHoles::NineHoles(QWidget *parent)
         map->setMapping(hole, id);
         QObject::connect(hole, SIGNAL(clicked(bool)), map, SLOT(map()));
     }
+#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
     QObject::connect(map, SIGNAL(mapped(int)), this, SLOT(play(int)));
+#else
+    QObject::connect(map, SIGNAL(mappedInt(int)), this, SLOT(play(int)));
+#endif
 
     this->updateStatusBar();
 

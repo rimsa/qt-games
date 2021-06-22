@@ -1950,7 +1950,6 @@ background-color: white;
           <property name="active" stdset="0">
            <bool>true</bool>
           </property>
-          <zorder>layoutWidget</zorder>
          </widget>
         </item>
        </layout>

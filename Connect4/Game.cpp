@@ -29,13 +29,13 @@ Game::~Game() {
 QString Game::directionToString(Game::Direction direction) {
     switch (direction) {
         case Game::HORIZONTAL:
-            return trUtf8("Horizontal");
+            return QString("Horizontal");
         case Game::VERTICAL:
-            return trUtf8("Vertical");
+            return QString("Vertical");
         case Game::DIAGONAL:
-            return trUtf8("Diagonal Principal");
+            return QString("Diagonal Principal");
         case Game::CROSS_DIAGONAL:
-            return trUtf8("Diagonal Invertida");
+            return QString("Diagonal Invertida");
         default:
             // Unrecheable!
             abort();

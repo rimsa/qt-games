@@ -43,7 +43,11 @@ PegSolitaire::PegSolitaire(QWidget *parent) :
             }
         }
     }
+#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
     QObject::connect(map, SIGNAL(mapped(int)), this, SLOT(checkPlay(int)));
+#else
+    QObject::connect(map, SIGNAL(mappedInt(int)), this, SLOT(checkPlay(int)));
+#endif
 
     QObject::connect(m_board, SIGNAL(countChanged(int)), this, SLOT(showStatus(int)));
     QObject::connect(m_board, SIGNAL(gameOver()), this, SLOT(showGameOver()));

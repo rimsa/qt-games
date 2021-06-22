@@ -21,11 +21,11 @@ QPixmap Ball::colorToPixmap(Ball::Color color) {
 QString Ball::colorToString(Ball::Color color) {
     switch (color) {
         case Ball::RED:
-            return trUtf8("Vermelho");
+            return QString("Vermelho");
         case Ball::BLUE:
-            return trUtf8("Azul");
+            return QString("Azul");
         default:
-            return trUtf8("Branco");
+            return QString("Branco");
     }
 }
 

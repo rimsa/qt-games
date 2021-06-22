@@ -60,8 +60,11 @@ void Connect4::initGame() {
         mapper->setMapping(button, c);
         QObject::connect(button, SIGNAL(clicked()), mapper, SLOT(map()));
     }
-
+#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
     QObject::connect(mapper, SIGNAL(mapped(int)), m_game, SLOT(play(int)));
+#else
+    QObject::connect(mapper, SIGNAL(mappedInt(int)), m_game, SLOT(play(int)));
+#endif
 
     QObject::connect(ui->acaoNovo, SIGNAL(triggered()), this, SLOT(reset()));
     QObject::connect(ui->acaoSair, SIGNAL(triggered()), qApp, SLOT(quit()));

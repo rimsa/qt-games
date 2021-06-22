@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QColor>
+#include <QMutex>
 #include <QPixmap>
 
 class Player : public QObject {
