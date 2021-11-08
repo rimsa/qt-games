@@ -17,11 +17,28 @@ public:
     };
     Q_ENUM(State)
 
+    enum Direction {
+        North,
+        NorthEast,
+        East,
+        SouthEast,
+        South,
+        SouthWest,
+        West,
+        NorthWest
+    };
+    Q_ENUM(Direction)
+
     explicit Hole(QWidget *parent = nullptr);
     virtual ~Hole();
 
     State state() const { return m_state; }
     void setState(State State);
+
+    Hole* neighbor(Hole::Direction direction) const { return m_neighbors[direction]; }
+    void setNeighbor(Hole::Direction direction, Hole* hole) { m_neighbors[direction] = hole; }
+
+    static QList<Hole::Direction> directions();
 
 public slots:
     void reset();
@@ -31,6 +48,7 @@ signals:
 
 private:
     State m_state;
+    Hole* m_neighbors[8];
 
     static QPixmap stateToPixmap(State state);
 

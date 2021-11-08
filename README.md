@@ -7,3 +7,4 @@ Supported games:
   - Reversi
   - Nine Holes
   - Achi
+  - Picaria
