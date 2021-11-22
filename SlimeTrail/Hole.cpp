@@ -29,6 +29,14 @@ void Hole::setMarked(bool marked) {
     }
 }
 
+QList<Hole::Direction> Hole::directions() {
+    return QList<Hole::Direction>()
+                << Hole::North << Hole::NorthEast
+                << Hole::East << Hole::SouthEast
+                << Hole::South << Hole::SouthWest
+                << Hole::West << Hole::NorthWest;
+}
+
 void Hole::reset() {
     m_state = Hole::EmptyState;
     m_marked = false;

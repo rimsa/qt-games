@@ -8,3 +8,4 @@ Supported games:
   - Nine Holes
   - Achi
   - Picaria
+  - SlimeTrail

@@ -14,7 +14,8 @@ SlimeTrail::Player otherPlayer(SlimeTrail::Player player) {
 SlimeTrail::SlimeTrail(QWidget *parent)
     : QMainWindow(parent),
       ui(new Ui::SlimeTrail),
-      m_player(SlimeTrail::RedPlayer) {
+      m_player(SlimeTrail::RedPlayer),
+      m_current(nullptr) {
 
     ui->setupUi(this);
 
@@ -46,6 +47,10 @@ SlimeTrail::SlimeTrail(QWidget *parent)
     // When the turn ends, switch the player.
     QObject::connect(this, SIGNAL(turnEnded()), this, SLOT(switchPlayer()));
 
+    // Notify when the game is over and reset.
+    QObject::connect(this, SIGNAL(gameOver()), this, SLOT(showGameOver()));
+    QObject::connect(this, SIGNAL(gameOver()), this, SLOT(reset()));
+
     this->reset();
 
     this->adjustSize();
@@ -56,12 +61,95 @@ SlimeTrail::~SlimeTrail() {
     delete ui;
 }
 
+Hole* SlimeTrail::neighboor(Hole* hole, Hole::Direction dir) {
+    if (hole == nullptr)
+        return nullptr;
+
+    int row = -1, col = -1;
+    switch (dir) {
+        case Hole::North:
+            row = hole->row() - 1;
+            col = hole->col();
+            break;
+        case Hole::NorthEast:
+            row = hole->row() - 1;
+            col = hole->col() + 1;
+            break;
+        case Hole::East:
+            row = hole->row();
+            col = hole->col() + 1;
+            break;
+        case Hole::SouthEast:
+            row = hole->row() + 1;
+            col = hole->col() + 1;
+            break;
+        case Hole::South:
+            row = hole->row() + 1;
+            col = hole->col();
+            break;
+        case Hole::SouthWest:
+            row = hole->row() + 1;
+            col = hole->col() - 1;
+            break;
+        case Hole::West:
+            row = hole->row();
+            col = hole->col() - 1;
+            break;
+        case Hole::NorthWest:
+            row = hole->row() - 1;
+            col = hole->col() - 1;
+            break;
+        default:
+            Q_UNREACHABLE();
+    }
+
+    return ((row >= 0 && row < 8 && col >= 0 && col < 8) ?
+                m_board[row][col] : nullptr);
+}
+
+int SlimeTrail::markNeighboors(Hole* hole, bool mark) {
+    Q_ASSERT(hole != nullptr);
+
+    int count = 0;
+    foreach (Hole::Direction dir, Hole::directions()) {
+        Hole* dst = this->neighboor(hole, dir);
+        if (dst != nullptr && dst->state() == Hole::EmptyState) {
+            dst->setMarked(mark);
+
+            // Increment counter.
+            ++count;
+        }
+    }
+
+    return count;
+}
+
 void SlimeTrail::play(int id) {
     Hole* hole = m_board[id / 8][id % 8];
-    qDebug() << "clicked on: " << hole->objectName();
 
-    hole->setState(Hole::BlackState);
-    emit turnEnded();
+    // Ignore if hole is not marked.
+    if (!hole->isMarked())
+        return;
+
+    Q_ASSERT(hole->state() == Hole::EmptyState);
+    Q_ASSERT(m_current != nullptr && m_current->state() == Hole::WhiteState);
+
+    // Set current hole as black and rollback previous markings.
+    m_current->setState(Hole::BlackState);
+    this->markNeighboors(m_current, false);
+
+    // Update current as the new hole, make it white and mark neighboors.
+    m_current = hole;
+    m_current->setState(Hole::WhiteState);
+
+    int count = this->markNeighboors(m_current, true);
+    if (!count ||
+        (m_current->row() == 7 && m_current->col() == 0) ||
+        (m_current->row() == 0 && m_current->col() == 7)) {
+        emit gameOver();
+    } else {
+        emit turnEnded();
+    }
 }
 
 void SlimeTrail::switchPlayer() {
@@ -78,14 +166,13 @@ void SlimeTrail::reset() {
         for (int col = 0; col < 8; ++col) {
             Hole* hole = m_board[row][col];
             hole->reset();
-
-            // FIXME: Only neighboor holes should be marked.
-            hole->setMarked(true);
         }
     }
 
     // Mark the starting position.
-    m_board[3][4]->setState(Hole::WhiteState);
+    m_current = m_board[3][4];
+    m_current->setState(Hole::WhiteState);
+    this->markNeighboors(m_current);
 
     // Reset the player.
     m_player = SlimeTrail::RedPlayer;
@@ -96,6 +183,18 @@ void SlimeTrail::reset() {
 
 void SlimeTrail::showAbout() {
     QMessageBox::information(this, tr("Sobre"), tr("Rastros\n\nAndrei Rimsa Alvares - andrei@cefetmg.br"));
+}
+
+void SlimeTrail::showGameOver() {
+    Q_ASSERT(m_current != nullptr);
+
+    if (m_current->row() == 7 && m_current->col() == 0) {
+        QMessageBox::information(this, tr("Vencedor"), tr("Parabéns, o Jogador Vermelho venceu."));
+    } else if (m_current->row() == 0 && m_current->col() == 7) {
+        QMessageBox::information(this, tr("Vencedor"), tr("Parabéns, o Jogador Azul venceu."));
+    } else {
+        QMessageBox::information(this, tr("Empate"), tr("O jogo empatou!"));
+    }
 }
 
 void SlimeTrail::updateStatusBar() {

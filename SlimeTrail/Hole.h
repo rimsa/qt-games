@@ -19,6 +19,18 @@ public:
     };
     Q_ENUM(State)
 
+    enum Direction {
+        North,
+        NorthEast,
+        East,
+        SouthEast,
+        South,
+        SouthWest,
+        West,
+        NorthWest
+    };
+    Q_ENUM(Direction)
+
     explicit Hole(QWidget *parent = nullptr);
     virtual ~Hole();
 
@@ -33,6 +45,8 @@ public:
 
     bool isMarked() const { return m_marked; }
     void setMarked(bool marked);
+
+    static QList<Hole::Direction> directions();
 
 public slots:
     void reset();
