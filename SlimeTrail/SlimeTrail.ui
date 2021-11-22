@@ -1,0 +1,2791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SlimeTrail</class>
+ <widget class="QMainWindow" name="SlimeTrail">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>499</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SlimeTrail</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>450</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>450</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#centralwidget {
+  background: url(':/grid');
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>25</number>
+    </property>
+    <property name="topMargin">
+     <number>25</number>
+    </property>
+    <property name="rightMargin">
+     <number>25</number>
+    </property>
+    <property name="bottomMargin">
+     <number>25</number>
+    </property>
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="Hole" name="hole00">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="Hole" name="hole01">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="Hole" name="hole02">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="Hole" name="hole03">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="Hole" name="hole04">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="Hole" name="hole05">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="Hole" name="hole06">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7">
+     <widget class="Hole" name="hole07">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="Hole" name="hole10">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="Hole" name="hole11">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="Hole" name="hole12">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="Hole" name="hole13">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="Hole" name="hole14">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="Hole" name="hole15">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="Hole" name="hole16">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="7">
+     <widget class="Hole" name="hole17">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="Hole" name="hole20">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="Hole" name="hole21">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="Hole" name="hole22">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="Hole" name="hole23">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="Hole" name="hole24">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="Hole" name="hole25">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="Hole" name="hole26">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="Hole" name="hole27">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="Hole" name="hole30">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="Hole" name="hole31">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="Hole" name="hole32">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="Hole" name="hole33">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="Hole" name="hole34">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="Hole" name="hole35">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="6">
+     <widget class="Hole" name="hole36">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="7">
+     <widget class="Hole" name="hole37">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="Hole" name="hole40">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="Hole" name="hole41">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="Hole" name="hole42">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="Hole" name="hole43">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="Hole" name="hole44">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="Hole" name="hole45">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="6">
+     <widget class="Hole" name="hole46">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="7">
+     <widget class="Hole" name="hole47">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="Hole" name="hole50">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="Hole" name="hole51">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="Hole" name="hole52">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="Hole" name="hole53">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4">
+     <widget class="Hole" name="hole54">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="Hole" name="hole55">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="6">
+     <widget class="Hole" name="hole56">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="7">
+     <widget class="Hole" name="hole57">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="Hole" name="hole60">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="Hole" name="hole61">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="Hole" name="hole62">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="Hole" name="hole63">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="4">
+     <widget class="Hole" name="hole64">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5">
+     <widget class="Hole" name="hole65">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="6">
+     <widget class="Hole" name="hole66">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="7">
+     <widget class="Hole" name="hole67">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="Hole" name="hole70">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="Hole" name="hole71">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="Hole" name="hole72">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="Hole" name="hole73">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="4">
+     <widget class="Hole" name="hole74">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="5">
+     <widget class="Hole" name="hole75">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="6">
+     <widget class="Hole" name="hole76">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="7">
+     <widget class="Hole" name="hole77">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  border: 0px;
+}
+QPushButton[marked=true]:hover {
+    background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>450</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>Jogo</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuGame"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Hole</class>
+   <extends>QPushButton</extends>
+   <header location="global">Hole.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
