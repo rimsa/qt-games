@@ -9,3 +9,4 @@ Supported games:
   - Achi
   - Picaria
   - SlimeTrail
+  - Alquerque

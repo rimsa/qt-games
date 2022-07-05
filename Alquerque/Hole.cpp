@@ -36,6 +36,103 @@ void Hole::reset() {
     this->updateHole();
 }
 
+QList<Hole::Direction> Hole::moves() {
+    Q_ASSERT(m_row >= 0 && m_row < 5);
+    Q_ASSERT(m_col >= 0 && m_col < 5);
+
+    switch (m_row) {
+        case 0:
+            switch (m_col) {
+                case 0:
+                    return QList<Hole::Direction>() << Hole::East << Hole::SouthEast << Hole::South;
+                case 1:
+                    return QList<Hole::Direction>() << Hole::East << Hole::South << Hole::West;
+                case 2:
+                    return QList<Hole::Direction>() << Hole::East << Hole::SouthEast << Hole::South << Hole::SouthWest << Hole::West;
+                case 3:
+                    return QList<Hole::Direction>() << Hole::East << Hole::South << Hole::West;
+                case 4:
+                    return QList<Hole::Direction>() << Hole::South << Hole::SouthWest << Hole::West;
+                default:
+                    Q_UNREACHABLE();
+            }
+
+            break;
+        case 1:
+            switch (m_col) {
+                case 0:
+                    return QList<Hole::Direction>() << Hole::North << Hole::East << Hole::South;
+                case 1:
+                    return QList<Hole::Direction>() << Hole::North << Hole::NorthEast << Hole::East << Hole::SouthEast << Hole::South << Hole::SouthWest << Hole::West << Hole::NorthWest;
+                case 2:
+                    return QList<Hole::Direction>() << Hole::North << Hole::East << Hole::South << Hole::West;
+                case 3:
+                    return QList<Hole::Direction>() << Hole::North << Hole::NorthEast << Hole::East << Hole::SouthEast << Hole::South << Hole::SouthWest << Hole::West << Hole::NorthWest;
+                case 4:
+                    return QList<Hole::Direction>() << Hole::North << Hole::South << Hole::West;
+                default:
+                    Q_UNREACHABLE();
+            }
+
+            break;
+        case 2:
+            switch (m_col) {
+                case 0:
+                    return QList<Hole::Direction>() << Hole::North << Hole::NorthEast << Hole::East << Hole::SouthEast << Hole::South;
+                case 1:
+                    return QList<Hole::Direction>() << Hole::North << Hole::East << Hole::South << Hole::West;
+                case 2:
+                    return QList<Hole::Direction>() << Hole::North << Hole::NorthEast << Hole::East << Hole::SouthEast << Hole::South << Hole::SouthWest << Hole::West << Hole::NorthWest;
+                case 3:
+                    return QList<Hole::Direction>() << Hole::North << Hole::East << Hole::South << Hole::West;
+                case 4:
+                    return QList<Hole::Direction>() << Hole::North << Hole::South << Hole::SouthWest << Hole::West << Hole::NorthWest;
+                default:
+                    Q_UNREACHABLE();
+            }
+
+            break;
+        case 3:
+            switch (m_col) {
+                case 0:
+                    return QList<Hole::Direction>() << Hole::North << Hole::East << Hole::South;
+                case 1:
+                    return QList<Hole::Direction>() << Hole::North << Hole::NorthEast << Hole::East << Hole::SouthEast << Hole::South << Hole::SouthWest << Hole::West << Hole::NorthWest;
+                case 2:
+                    return QList<Hole::Direction>() << Hole::North << Hole::East << Hole::South << Hole::West;
+                case 3:
+                    return QList<Hole::Direction>() << Hole::North << Hole::NorthEast << Hole::East << Hole::SouthEast << Hole::South << Hole::SouthWest << Hole::West << Hole::NorthWest;
+                case 4:
+                    return QList<Hole::Direction>() << Hole::North << Hole::South << Hole::West;
+                default:
+                    Q_UNREACHABLE();
+            }
+
+            break;
+        case 4:
+            switch (m_col) {
+                case 0:
+                    return QList<Hole::Direction>() << Hole::North << Hole::NorthEast << Hole::East;
+                case 1:
+                    return QList<Hole::Direction>() << Hole::North << Hole::East << Hole::West;
+                case 2:
+                    return QList<Hole::Direction>() << Hole::North << Hole::NorthEast << Hole::East << Hole::West << Hole::NorthWest;
+                case 3:
+                    return QList<Hole::Direction>() << Hole::North << Hole::East << Hole::West;
+                case 4:
+                    return QList<Hole::Direction>() << Hole::North << Hole::West << Hole::NorthWest;
+                default:
+                    Q_UNREACHABLE();
+            }
+
+            break;
+        default:
+            Q_UNREACHABLE();
+    }
+
+    return QList<Hole::Direction>();
+}
+
 void Hole::updateHole() {
     QIcon icon;
     switch (m_state) {
