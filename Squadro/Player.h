@@ -2,8 +2,12 @@
 #define PLAYER_H
 
 #include <QObject>
+#include <QList>
 #include <QMutex>
 #include <QPixmap>
+
+class Cell;
+class Lane;
 
 class Player : public QObject {
     Q_OBJECT
@@ -24,11 +28,13 @@ public:
     const QPixmap& pixmap() const { return m_pixmap; }
     int count() const { return m_count; }
 
+    const QList<Lane*>& lanes() const { return m_lanes; }
+    void addLane(Lane* lane);
+    Lane* findLane(Cell* cell) const;
     Player* other() const;
 
 public slots:
     void reset();
-    void incrementCount();
 
 signals:
     void countChanged(int count);
@@ -41,9 +47,13 @@ private:
     QString m_name;
     QPixmap m_pixmap;
     int m_count;
+    QList<Lane*> m_lanes;
 
     explicit Player(Player::Type type);
     Q_DISABLE_COPY(Player);
+
+private slots:
+    void incrementCount();
 
 };
 

@@ -10,3 +10,4 @@ Supported games:
   - Picaria
   - SlimeTrail
   - Alquerque
+  - Squadro

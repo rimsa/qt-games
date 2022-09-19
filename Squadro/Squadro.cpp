@@ -1,6 +1,7 @@
 #include "Squadro.h"
 #include "ui_Squadro.h"
 #include "Cell.h"
+#include "Lane.h"
 #include "Player.h"
 
 #include <QDebug>
@@ -38,16 +39,42 @@ Squadro::Squadro(QWidget *parent)
     QObject::connect(map, SIGNAL(mappedInt(int)), this, SLOT(play(int)));
 #endif
 
+    // Setup the steps for each lane.
+    QList<int> steps;
+    steps << 1 << 3 << 2 << 3 << 1;
+
+    // Build lanes for the red player.
+    Player* red = Player::player(Player::Red);
+    QObject::connect(red, SIGNAL(countChanged(int)), this, SLOT(updateStatusBar()));
+    for (int row = 1; row <= 5; row++) {
+        QList<Cell*> cells;
+        for (int col = 0; col < 7; col++)
+            cells << m_board[row][col];
+
+        int s = steps.at(row-1);
+        Lane* lane = new Lane(red, cells, s, (4 - s), this);
+        red->addLane(lane);
+    }
+
+    // Build lanes for the blue player.
+    Player* blue = Player::player(Player::Blue);
+    QObject::connect(blue, SIGNAL(countChanged(int)), this, SLOT(updateStatusBar()));
+    for (int col = 1; col <= 5; col++) {
+        QList<Cell*> cells;
+        for (int row = 6; row >= 0; row--)
+            cells << m_board[row][col];
+
+        int s = steps.at(col-1);
+        Lane* lane = new Lane(blue, cells, s, (4 - s), this);
+        blue->addLane(lane);
+    }
+
     // When the turn ends, switch the player.
     QObject::connect(this, SIGNAL(turnEnded()), this, SLOT(switchPlayer()));
 
-    // Connect the red player counts.
-    Player* red = Player::player(Player::Red);
-    QObject::connect(red, SIGNAL(countChanged(int)), this, SLOT(updateStatusBar()));
-
-    // Connect the blue player counts.
-    Player* blue = Player::player(Player::Blue);
-    QObject::connect(blue, SIGNAL(countChanged(int)), this, SLOT(updateStatusBar()));
+    // When the game is over, show message and reset.
+    QObject::connect(this, SIGNAL(gameOver()), this, SLOT(showGameOver()));
+    QObject::connect(this, SIGNAL(gameOver()), this, SLOT(reset()));
 
     // Reset.
     this->reset();
@@ -67,11 +94,20 @@ void Squadro::play(int id) {
     Cell* cell = m_board[row][col];
     Q_ASSERT(cell != nullptr);
 
-    if (cell->player() == m_player && !cell->isInverted()) {
-        cell->setInverted(true);
-        m_player->incrementCount();
+    if (cell->player() != m_player)
+        return;
+
+    Lane* lane = m_player->findLane(cell);
+    Q_ASSERT(lane->current() == cell);
+    if (lane->isFinished())
+        return;
+
+    lane->move();
+
+    if (m_player->count() == 4)
+        emit gameOver();
+    else
         emit turnEnded();
-    }
 }
 
 void Squadro::switchPlayer() {
@@ -91,20 +127,6 @@ void Squadro::reset() {
     Player* blue = Player::player(Player::Blue);
     blue->reset();
 
-    // Reset board.
-    for (int row = 0; row < 7; ++row) {
-        for (int col = 0; col < 7; ++col) {
-            Cell* cell = m_board[row][col];
-            if (cell != nullptr)
-                cell->reset();
-        }
-    }
-
-    for (int i = 1; i < 6; i++) {
-        m_board[i][0]->setPlayer(red);
-        m_board[6][i]->setPlayer(blue);
-    }
-
     // Set the starting player.
     m_player = red;
 
@@ -115,6 +137,10 @@ void Squadro::reset() {
 void Squadro::showAbout() {
     QMessageBox::information(this, tr("About"),
         tr("Squadro\n\nAndrei Rimsa Alvares - andrei@cefetmg.br"));
+}
+
+void Squadro::showGameOver() {
+    QMessageBox::information(this, tr("Vencedor"), tr("Parabéns, o %1 venceu.").arg(m_player->name()));
 }
 
 void Squadro::updateStatusBar() {

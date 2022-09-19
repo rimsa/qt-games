@@ -19,6 +19,7 @@ public:
 
 signals:
     void turnEnded();
+    void gameOver();
 
 private:
     Ui::Squadro *ui;
@@ -31,6 +32,7 @@ private slots:
     void reset();
 
     void showAbout();
+    void showGameOver();
     void updateStatusBar();
 
 };

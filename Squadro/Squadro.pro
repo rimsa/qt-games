@@ -10,12 +10,14 @@ CONFIG += c++11
 
 SOURCES += \
     Cell.cpp \
+    Lane.cpp \
     Player.cpp \
     main.cpp \
     Squadro.cpp
 
 HEADERS += \
     Cell.h \
+    Lane.h \
     Player.h \
     Squadro.h
 

@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "Lane.h"
 
 Player* Player::m_players[] = { 0, 0 };
 QMutex& Player::m_mutex = *(new QMutex()); // ugly hack
@@ -35,6 +36,21 @@ Player* Player::player(Player::Type type) {
     return m_players[type];
 }
 
+void Player::addLane(Lane* lane) {
+    m_lanes.append(lane);
+    QObject::connect(lane, SIGNAL(finished()),
+        this, SLOT(incrementCount()), Qt::DirectConnection);
+}
+
+Lane* Player::findLane(Cell* cell) const {
+    foreach (Lane* lane, m_lanes) {
+        if (lane->contains(cell))
+            return lane;
+    }
+
+    return nullptr;
+}
+
 Player* Player::other() const {
     switch (m_type) {
         case Player::Red:
@@ -48,6 +64,9 @@ Player* Player::other() const {
 }
 
 void Player::reset() {
+    foreach (Lane* lane, m_lanes)
+        lane->reset();
+
     m_count = 0;
 }
 
