@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>166</width>
-    <height>164</height>
+    <width>164</width>
+    <height>162</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_7">
+  <layout class="QVBoxLayout" name="verticalLayout_6">
    <property name="spacing">
     <number>0</number>
    </property>
@@ -30,17 +30,156 @@
     <number>0</number>
    </property>
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout_6">
+    <layout class="QHBoxLayout" name="topRow">
      <property name="spacing">
       <number>0</number>
      </property>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <widget class="QLabel" name="border00">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 1px 1px 1px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="border01">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 1px 1px 0px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="border02">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 1px 1px 0px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="border03">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 1px 1px 0px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="border04">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 0px 1px 0px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="border05">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 1px 1px 1px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="middleRow">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="leftColumn">
        <property name="spacing">
         <number>0</number>
        </property>
        <item>
-        <widget class="QLabel" name="piece00">
+        <widget class="QLabel" name="border19">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -54,7 +193,7 @@
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-width: 1px 1px 1px 1px;
+          <string notr="true">border-width: 0px 1px 1px 1px;
 border-style: solid;
 border-color: black;
 background-color: transparent;</string>
@@ -62,7 +201,7 @@ background-color: transparent;</string>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="piece01_3">
+        <widget class="QLabel" name="border18">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -76,7 +215,7 @@ background-color: transparent;</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-width: 1px 1px 1px 0px;
+          <string notr="true">border-width: 0px 1px 1px 1px;
 border-style: solid;
 border-color: black;
 background-color: transparent;</string>
@@ -84,7 +223,7 @@ background-color: transparent;</string>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="piece02_3">
+        <widget class="QLabel" name="border17">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -98,7 +237,7 @@ background-color: transparent;</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-width: 1px 1px 1px 0px;
+          <string notr="true">border-width: 0px 1px 1px 1px;
 border-style: solid;
 border-color: black;
 background-color: transparent;</string>
@@ -106,7 +245,7 @@ background-color: transparent;</string>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="piece03_3">
+        <widget class="QLabel" name="border16">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -120,51 +259,7 @@ background-color: transparent;</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-width: 1px 1px 1px 0px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="piece04_3">
-         <property name="minimumSize">
-          <size>
-           <width>25</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>25</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-width: 1px 0px 1px 0px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="piece05">
-         <property name="minimumSize">
-          <size>
-           <width>25</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>25</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-width: 1px 1px 1px 1px;
+          <string notr="true">border-width: 0px 1px 0px 1px;
 border-style: solid;
 border-color: black;
 background-color: transparent;</string>
@@ -174,122 +269,46 @@ background-color: transparent;</string>
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <layout class="QVBoxLayout" name="middleColumn">
        <property name="spacing">
         <number>0</number>
        </property>
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_2">
-         <property name="spacing">
-          <number>0</number>
+        <widget class="QLabel" name="spaceTop">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>15</height>
+          </size>
          </property>
-         <item>
-          <widget class="QLabel" name="piece10">
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-width: 0px 1px 1px 1px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="piece20">
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-width: 0px 1px 1px 1px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="piece20_2">
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-width: 0px 1px 1px 1px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="piece10_2">
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-width: 0px 1px 0px 1px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;</string>
+         </property>
+        </widget>
        </item>
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout_5">
+        <layout class="QHBoxLayout" name="centerPiece">
          <property name="spacing">
           <number>0</number>
          </property>
          <item>
-          <widget class="QLabel" name="label_2">
+          <widget class="QLabel" name="leftSpace">
            <property name="minimumSize">
             <size>
-             <width>100</width>
-             <height>15</height>
+             <width>15</width>
+             <height>70</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>100</width>
-             <height>15</height>
+             <width>15</width>
+             <height>70</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -298,22 +317,51 @@ background-color: transparent;</string>
           </widget>
          </item>
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
            <property name="spacing">
             <number>0</number>
            </property>
            <item>
-            <widget class="QLabel" name="label_4">
+            <widget class="Tile" name="home0">
              <property name="minimumSize">
               <size>
-               <width>15</width>
-               <height>70</height>
+               <width>25</width>
+               <height>25</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
-               <width>15</width>
-               <height>70</height>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 1px solid black;
+background-color: transparent;</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="gap1">
+             <property name="minimumSize">
+              <size>
+               <width>25</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>25</width>
+               <height>20</height>
               </size>
              </property>
              <property name="styleSheet">
@@ -322,225 +370,151 @@ background-color: transparent;</string>
             </widget>
            </item>
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_3">
-             <property name="spacing">
-              <number>0</number>
-             </property>
-             <item>
-              <widget class="QPushButton" name="home0">
-               <property name="minimumSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">border: 1px solid black;
-background-color: transparent;</string>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="flat">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLabel" name="label_6">
-               <property name="minimumSize">
-                <size>
-                 <width>25</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>25</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: white;</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="home2">
-               <property name="minimumSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">border: 1px solid black;
-background-color: transparent;</string>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="flat">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <widget class="QLabel" name="label_7">
+            <widget class="Tile" name="home2">
              <property name="minimumSize">
               <size>
-               <width>20</width>
-               <height>70</height>
+               <width>25</width>
+               <height>25</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
-               <width>20</width>
-               <height>70</height>
+               <width>25</width>
+               <height>25</height>
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: white;</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <layout class="QVBoxLayout" name="verticalLayout_4">
-             <property name="spacing">
-              <number>0</number>
-             </property>
-             <item>
-              <widget class="QPushButton" name="home1">
-               <property name="minimumSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">border: 1px solid black;
+              <string notr="true">border: 1px solid black;
 background-color: transparent;</string>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="flat">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLabel" name="label_8">
-               <property name="minimumSize">
-                <size>
-                 <width>25</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>25</width>
-                 <height>20</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: white;</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="home3">
-               <property name="minimumSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">border: 1px solid black;
-background-color: transparent;</string>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>25</width>
-                 <height>25</height>
-                </size>
-               </property>
-               <property name="flat">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <widget class="QLabel" name="label_5">
-             <property name="minimumSize">
+             </property>
+             <property name="iconSize">
               <size>
-               <width>15</width>
-               <height>70</height>
+               <width>25</width>
+               <height>25</height>
               </size>
              </property>
-             <property name="maximumSize">
-              <size>
-               <width>15</width>
-               <height>70</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-color: white;</string>
+             <property name="flat">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
           </layout>
          </item>
          <item>
-          <widget class="QLabel" name="label_3">
+          <widget class="QLabel" name="middleSpace">
            <property name="minimumSize">
             <size>
-             <width>100</width>
-             <height>15</height>
+             <width>20</width>
+             <height>70</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>100</width>
-             <height>15</height>
+             <width>20</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: white;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="Tile" name="home1">
+             <property name="minimumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 1px solid black;
+background-color: transparent;</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="gap2">
+             <property name="minimumSize">
+              <size>
+               <width>25</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>25</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: white;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Tile" name="home3">
+             <property name="minimumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 1px solid black;
+background-color: transparent;</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="rightSpace">
+           <property name="minimumSize">
+            <size>
+             <width>15</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>15</width>
+             <height>70</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -551,109 +525,33 @@ background-color: transparent;</string>
         </layout>
        </item>
        <item>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <property name="spacing">
-          <number>0</number>
+        <widget class="QLabel" name="spaceBottom">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>15</height>
+          </size>
          </property>
-         <item>
-          <widget class="QLabel" name="piece15">
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-width: 0px 1px 1px 1px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="piece25">
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-width: 0px 1px 1px 1px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="piece25_2">
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-width: 0px 1px 1px 1px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="piece15_2">
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-width: 0px 1px 0px 1px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QVBoxLayout" name="rightColumn">
        <property name="spacing">
         <number>0</number>
        </property>
        <item>
-        <widget class="QLabel" name="piece00_2">
+        <widget class="QLabel" name="border06">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -667,7 +565,7 @@ background-color: transparent;</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-width: 1px 1px 1px 1px;
+          <string notr="true">border-width: 0px 1px 1px 1px;
 border-style: solid;
 border-color: black;
 background-color: transparent;</string>
@@ -675,7 +573,7 @@ background-color: transparent;</string>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="piece01_2">
+        <widget class="QLabel" name="border07">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -689,7 +587,7 @@ background-color: transparent;</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-width: 1px 1px 1px 0px;
+          <string notr="true">border-width: 0px 1px 1px 1px;
 border-style: solid;
 border-color: black;
 background-color: transparent;</string>
@@ -697,7 +595,7 @@ background-color: transparent;</string>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="piece02_2">
+        <widget class="QLabel" name="border08">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -711,7 +609,7 @@ background-color: transparent;</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-width: 1px 1px 1px 0px;
+          <string notr="true">border-width: 0px 1px 1px 1px;
 border-style: solid;
 border-color: black;
 background-color: transparent;</string>
@@ -719,7 +617,7 @@ background-color: transparent;</string>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="piece03_2">
+        <widget class="QLabel" name="border09">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -733,51 +631,7 @@ background-color: transparent;</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-width: 1px 1px 1px 0px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="piece04_2">
-         <property name="minimumSize">
-          <size>
-           <width>25</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>25</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-width: 1px 0px 1px 0px;
-border-style: solid;
-border-color: black;
-background-color: transparent;</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="piece05_2">
-         <property name="minimumSize">
-          <size>
-           <width>25</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>25</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-width: 1px 1px 1px 1px;
+          <string notr="true">border-width: 0px 1px 0px 1px;
 border-style: solid;
 border-color: black;
 background-color: transparent;</string>
@@ -788,8 +642,154 @@ background-color: transparent;</string>
      </item>
     </layout>
    </item>
+   <item>
+    <layout class="QHBoxLayout" name="bottomRow">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="border15">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 1px 1px 1px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="border14">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 1px 1px 0px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="border13">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 1px 1px 0px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="border12">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 1px 1px 0px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="border11">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 0px 1px 0px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="border10">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width: 1px 1px 1px 1px;
+border-style: solid;
+border-color: black;
+background-color: transparent;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Tile</class>
+   <extends>QPushButton</extends>
+   <header location="global">Tile.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

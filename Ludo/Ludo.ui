@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>622</width>
-    <height>421</height>
+    <width>626</width>
+    <height>423</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -62,7 +62,7 @@
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="Dice" name="dice">
           <property name="minimumSize">
            <size>
             <width>75</width>
@@ -74,9 +74,6 @@
             <width>75</width>
             <height>75</height>
            </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">border: 2px solid black; border-radius: 12px; background-color: red;</string>
           </property>
           <property name="icon">
            <iconset resource="Ludo.qrc">
@@ -90,6 +87,9 @@
           </property>
           <property name="flat">
            <bool>true</bool>
+          </property>
+          <property name="type" stdset="0">
+           <number>1</number>
           </property>
          </widget>
         </item>
@@ -125,501 +125,83 @@
        </spacer>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <property name="spacing">
-         <number>0</number>
+       <widget class="Status" name="player1" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>215</width>
+          <height>35</height>
+         </size>
         </property>
-        <item>
-         <widget class="QLabel" name="label_6">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="Ludo.qrc">:/others/dot</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="font">
-           <font>
-            <pointsize>16</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: #ff3333;</string>
-          </property>
-          <property name="text">
-           <string>Jogador 1:</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_2">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="Ludo.qrc">:/pawns/empty</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_3">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="Ludo.qrc">:/pawns/empty</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_4">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="Ludo.qrc">:/pawns/empty</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_5">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="Ludo.qrc">:/pawns/empty</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
+        <property name="maximumSize">
+         <size>
+          <width>215</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="type" stdset="0">
+         <number>1</number>
+        </property>
+        <property name="turn" stdset="0">
+         <bool>true</bool>
+        </property>
+       </widget>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <property name="spacing">
-         <number>0</number>
+       <widget class="Status" name="player2" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>215</width>
+          <height>35</height>
+         </size>
         </property>
-        <item>
-         <widget class="QLabel" name="label_7">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_8">
-          <property name="font">
-           <font>
-            <pointsize>16</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: #ffff33;</string>
-          </property>
-          <property name="text">
-           <string>Jogador 2:</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_9">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="Ludo.qrc">:/pawns/empty</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_10">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="Ludo.qrc">:/pawns/empty</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_11">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="Ludo.qrc">:/pawns/empty</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_12">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="Ludo.qrc">:/pawns/empty</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
+        <property name="maximumSize">
+         <size>
+          <width>215</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="type" stdset="0">
+         <number>2</number>
+        </property>
+       </widget>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
-        <property name="spacing">
-         <number>0</number>
+       <widget class="Status" name="player3" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>215</width>
+          <height>35</height>
+         </size>
         </property>
-        <item>
-         <widget class="QLabel" name="label_13">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_14">
-          <property name="font">
-           <font>
-            <pointsize>16</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: #33ff33;</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_15">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_16">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_17">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_18">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
+        <property name="maximumSize">
+         <size>
+          <width>215</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="type" stdset="0">
+         <number>3</number>
+        </property>
+       </widget>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_4">
-        <property name="spacing">
-         <number>0</number>
+       <widget class="Status" name="player4" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>215</width>
+          <height>35</height>
+         </size>
         </property>
-        <item>
-         <widget class="QLabel" name="label_19">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_20">
-          <property name="font">
-           <font>
-            <pointsize>16</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: #3333ff;</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_21">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_22">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_23">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_24">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
+        <property name="maximumSize">
+         <size>
+          <width>215</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="type" stdset="0">
+         <number>4</number>
+        </property>
+       </widget>
       </item>
       <item>
        <spacer name="verticalSpacer_2">
@@ -643,51 +225,51 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>622</width>
-     <height>22</height>
+     <width>626</width>
+     <height>24</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuJogo">
+   <widget class="QMenu" name="menuGame">
     <property name="title">
      <string>Jogo</string>
     </property>
-    <addaction name="actionNovo"/>
-    <addaction name="actionSair"/>
+    <addaction name="actionNew"/>
+    <addaction name="actionQuit"/>
    </widget>
-   <widget class="QMenu" name="menuAjuda">
+   <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Ajuda</string>
     </property>
-    <addaction name="actionSobre"/>
+    <addaction name="actionAbout"/>
    </widget>
-   <widget class="QMenu" name="menuModo">
+   <widget class="QMenu" name="menuMode">
     <property name="title">
      <string>Modo</string>
     </property>
-    <addaction name="action2"/>
-    <addaction name="action3"/>
-    <addaction name="action4"/>
+    <addaction name="actionMode2P"/>
+    <addaction name="actionMode3P"/>
+    <addaction name="actionMode4P"/>
    </widget>
-   <addaction name="menuJogo"/>
-   <addaction name="menuModo"/>
-   <addaction name="menuAjuda"/>
+   <addaction name="menuGame"/>
+   <addaction name="menuMode"/>
+   <addaction name="menuHelp"/>
   </widget>
-  <action name="actionNovo">
+  <action name="actionNew">
    <property name="text">
     <string>Novo</string>
    </property>
   </action>
-  <action name="actionSair">
+  <action name="actionQuit">
    <property name="text">
     <string>Sair</string>
    </property>
   </action>
-  <action name="actionSobre">
+  <action name="actionAbout">
    <property name="text">
     <string>Sobre</string>
    </property>
   </action>
-  <action name="action2">
+  <action name="actionMode2P">
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -698,7 +280,7 @@
     <string>Dois jogadores</string>
    </property>
   </action>
-  <action name="action3">
+  <action name="actionMode3P">
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -706,7 +288,7 @@
     <string>Três jogadores</string>
    </property>
   </action>
-  <action name="action4">
+  <action name="actionMode4P">
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -722,6 +304,17 @@
    <extends>QWidget</extends>
    <header location="global">Board.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Status</class>
+   <extends>QWidget</extends>
+   <header location="global">Status.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Dice</class>
+   <extends>QPushButton</extends>
+   <header location="global">Dice.h</header>
   </customwidget>
  </customwidgets>
  <resources>

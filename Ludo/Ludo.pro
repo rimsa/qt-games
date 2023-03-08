@@ -24,18 +24,29 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
+    Dice.cpp \
            Ludo.cpp \
+    Pawn.cpp \
            Player.cpp \
     Home.cpp \
-    Board.cpp
+    Board.cpp \
+    Status.cpp \
+    Tile.cpp \
+    Track.cpp
 
 HEADERS  += Ludo.h \
+    Dice.h \
+    Pawn.h \
             Player.h \
     Home.h \
-    Board.h
+    Board.h \
+    Status.h \
+    Tile.h \
+    Track.h
 
 FORMS    += Ludo.ui \
     Home.ui \
-    Board.ui
+    Board.ui \
+    Status.ui
 
 RESOURCES += Ludo.qrc

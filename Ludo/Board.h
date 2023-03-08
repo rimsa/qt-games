@@ -7,6 +7,9 @@ namespace Ui {
     class Board;
 }
 
+class Tile;
+class Track;
+
 class Board : public QWidget {
     Q_OBJECT
 
@@ -16,6 +19,13 @@ public:
 
 private:
     Ui::Board *ui;
+    struct {
+        Tile* regular[52];
+        Tile* special[20];
+    } m_tiles;
+    Track* m_tracks[4];
+
+    friend class Ludo;
 
 };
 

@@ -30,12 +30,12 @@
     <number>0</number>
    </property>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <layout class="QHBoxLayout" name="topRow">
      <property name="spacing">
       <number>0</number>
      </property>
      <item>
-      <widget class="QWidget" name="topblue" native="true">
+      <widget class="QWidget" name="blueSquare" native="true">
        <property name="minimumSize">
         <size>
          <width>150</width>
@@ -68,7 +68,7 @@
          <number>0</number>
         </property>
         <item>
-         <widget class="Home" name="blue" native="true">
+         <widget class="Home" name="blueHome" native="true">
           <property name="type" stdset="0">
            <number>4</number>
           </property>
@@ -78,12 +78,12 @@
       </widget>
      </item>
      <item>
-      <layout class="QGridLayout" name="gridLayout">
+      <layout class="QGridLayout" name="redWalk">
        <property name="spacing">
         <number>0</number>
        </property>
        <item row="0" column="0">
-        <widget class="QPushButton" name="pushButton">
+        <widget class="Tile" name="tile00">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -115,7 +115,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="pushButton_6">
+        <widget class="Tile" name="tile01">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -147,7 +147,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="2">
-        <widget class="QPushButton" name="pushButton_12">
+        <widget class="Tile" name="tile02">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -179,7 +179,7 @@ background-color: white;
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="Tile" name="tile51">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -211,7 +211,7 @@ background-color: white;
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_7">
+        <widget class="Tile" name="center00">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -240,10 +240,13 @@ background-color: #ff3333;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="2">
-        <widget class="QPushButton" name="pushButton_11">
+        <widget class="Tile" name="tile03">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -272,10 +275,13 @@ background-color: #ff3333;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="Tile" name="tile50">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -307,7 +313,7 @@ background-color: white;
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QPushButton" name="pushButton_9">
+        <widget class="Tile" name="center01">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -336,10 +342,13 @@ background-color: #ff3333;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="2">
-        <widget class="QPushButton" name="pushButton_15">
+        <widget class="Tile" name="tile04">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -371,7 +380,7 @@ background-color: white;
         </widget>
        </item>
        <item row="3" column="0">
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="Tile" name="tile49">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -403,7 +412,7 @@ background-color: white;
         </widget>
        </item>
        <item row="3" column="1">
-        <widget class="QPushButton" name="pushButton_10">
+        <widget class="Tile" name="center02">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -432,10 +441,13 @@ background-color: #ff3333;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="3" column="2">
-        <widget class="QPushButton" name="pushButton_13">
+        <widget class="Tile" name="tile05">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -467,7 +479,7 @@ background-color: white;
         </widget>
        </item>
        <item row="4" column="0">
-        <widget class="QPushButton" name="pushButton_5">
+        <widget class="Tile" name="tile48">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -499,7 +511,7 @@ background-color: white;
         </widget>
        </item>
        <item row="4" column="1">
-        <widget class="QPushButton" name="pushButton_8">
+        <widget class="Tile" name="center03">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -528,10 +540,13 @@ background-color: #ff3333;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="4" column="2">
-        <widget class="QPushButton" name="pushButton_14">
+        <widget class="Tile" name="tile06">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -563,7 +578,7 @@ background-color: white;
         </widget>
        </item>
        <item row="5" column="0">
-        <widget class="QPushButton" name="pushButton_16">
+        <widget class="Tile" name="tile47">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -595,7 +610,7 @@ background-color: white;
         </widget>
        </item>
        <item row="5" column="1">
-        <widget class="QPushButton" name="pushButton_17">
+        <widget class="Tile" name="center04">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -624,10 +639,13 @@ background-color: #ff3333;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="5" column="2">
-        <widget class="QPushButton" name="pushButton_18">
+        <widget class="Tile" name="tile07">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -661,7 +679,7 @@ background-color: white;
       </layout>
      </item>
      <item>
-      <widget class="QWidget" name="topred" native="true">
+      <widget class="QWidget" name="redSquare" native="true">
        <property name="minimumSize">
         <size>
          <width>150</width>
@@ -694,12 +712,9 @@ background-color: white;
          <number>0</number>
         </property>
         <item>
-         <widget class="Home" name="red" native="true">
+         <widget class="Home" name="redHome" native="true">
           <property name="type" stdset="0">
            <number>1</number>
-          </property>
-          <property name="active" stdset="0">
-           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -709,17 +724,17 @@ background-color: white;
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <layout class="QHBoxLayout" name="middleRow">
      <property name="spacing">
       <number>0</number>
      </property>
      <item>
-      <layout class="QGridLayout" name="gridLayout_3">
+      <layout class="QGridLayout" name="blueWalk">
        <property name="spacing">
         <number>0</number>
        </property>
        <item row="0" column="0">
-        <widget class="QPushButton" name="pushButton_37">
+        <widget class="Tile" name="tile41">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -751,7 +766,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="pushButton_38">
+        <widget class="Tile" name="tile42">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -780,10 +795,13 @@ background-color: #3333ff;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="0" column="2">
-        <widget class="QPushButton" name="pushButton_39">
+        <widget class="Tile" name="tile43">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -815,7 +833,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="3">
-        <widget class="QPushButton" name="pushButton_40">
+        <widget class="Tile" name="tile44">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -847,7 +865,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="4">
-        <widget class="QPushButton" name="pushButton_41">
+        <widget class="Tile" name="tile45">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -879,7 +897,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="5">
-        <widget class="QPushButton" name="pushButton_42">
+        <widget class="Tile" name="tile46">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -911,7 +929,7 @@ background-color: white;
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QPushButton" name="pushButton_44">
+        <widget class="Tile" name="tile40">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -943,7 +961,7 @@ background-color: white;
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_47">
+        <widget class="Tile" name="center15">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -970,12 +988,15 @@ background-color: #3333ff;
           </size>
          </property>
          <property name="flat">
+          <bool>true</bool>
+         </property>
+         <property name="safe" stdset="0">
           <bool>true</bool>
          </property>
         </widget>
        </item>
        <item row="1" column="2">
-        <widget class="QPushButton" name="pushButton_45">
+        <widget class="Tile" name="center16">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1002,12 +1023,15 @@ background-color: #3333ff;
           </size>
          </property>
          <property name="flat">
+          <bool>true</bool>
+         </property>
+         <property name="safe" stdset="0">
           <bool>true</bool>
          </property>
         </widget>
        </item>
        <item row="1" column="3">
-        <widget class="QPushButton" name="pushButton_48">
+        <widget class="Tile" name="center17">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1036,10 +1060,13 @@ background-color: #3333ff;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="4">
-        <widget class="QPushButton" name="pushButton_43">
+        <widget class="Tile" name="center18">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1068,10 +1095,13 @@ background-color: #3333ff;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="5">
-        <widget class="QPushButton" name="pushButton_46">
+        <widget class="Tile" name="center19">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1100,10 +1130,13 @@ background-color: #3333ff;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QPushButton" name="pushButton_49">
+        <widget class="Tile" name="tile39">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1135,7 +1168,7 @@ background-color: white;
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QPushButton" name="pushButton_50">
+        <widget class="Tile" name="tile38">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1167,7 +1200,7 @@ background-color: white;
         </widget>
        </item>
        <item row="2" column="2">
-        <widget class="QPushButton" name="pushButton_54">
+        <widget class="Tile" name="tile37">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1199,7 +1232,7 @@ background-color: white;
         </widget>
        </item>
        <item row="2" column="3">
-        <widget class="QPushButton" name="pushButton_52">
+        <widget class="Tile" name="tile36">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1231,7 +1264,7 @@ background-color: white;
         </widget>
        </item>
        <item row="2" column="4">
-        <widget class="QPushButton" name="pushButton_51">
+        <widget class="Tile" name="tile35">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1263,7 +1296,7 @@ background-color: white;
         </widget>
        </item>
        <item row="2" column="5">
-        <widget class="QPushButton" name="pushButton_53">
+        <widget class="Tile" name="tile34">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1297,7 +1330,7 @@ background-color: white;
       </layout>
      </item>
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="centerPiece">
        <property name="minimumSize">
         <size>
          <width>75</width>
@@ -1320,12 +1353,12 @@ height: 75px;</string>
       </widget>
      </item>
      <item>
-      <layout class="QGridLayout" name="gridLayout_4">
+      <layout class="QGridLayout" name="greenWalk">
        <property name="spacing">
         <number>0</number>
        </property>
        <item row="1" column="3">
-        <widget class="QPushButton" name="pushButton_64">
+        <widget class="Tile" name="center06">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1354,10 +1387,13 @@ background-color: #33ff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="5">
-        <widget class="QPushButton" name="pushButton_66">
+        <widget class="Tile" name="tile14">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1389,7 +1425,7 @@ background-color: white;
         </widget>
        </item>
        <item row="1" column="2">
-        <widget class="QPushButton" name="pushButton_63">
+        <widget class="Tile" name="center07">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1418,10 +1454,13 @@ background-color: #33ff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QPushButton" name="pushButton_67">
+        <widget class="Tile" name="tile20">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1453,7 +1492,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QPushButton" name="pushButton_55">
+        <widget class="Tile" name="tile08">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1485,7 +1524,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="pushButton_56">
+        <widget class="Tile" name="tile09">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1517,7 +1556,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="2">
-        <widget class="QPushButton" name="pushButton_57">
+        <widget class="Tile" name="tile10">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1549,7 +1588,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="3">
-        <widget class="QPushButton" name="pushButton_58">
+        <widget class="Tile" name="tile11">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1581,7 +1620,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="4">
-        <widget class="QPushButton" name="pushButton_59">
+        <widget class="Tile" name="tile12">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1613,7 +1652,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="5">
-        <widget class="QPushButton" name="pushButton_60">
+        <widget class="Tile" name="tile13">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1645,7 +1684,7 @@ background-color: white;
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QPushButton" name="pushButton_61">
+        <widget class="Tile" name="center09">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1674,10 +1713,13 @@ background-color: #33ff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_62">
+        <widget class="Tile" name="center08">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1706,10 +1748,13 @@ background-color: #33ff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="2">
-        <widget class="QPushButton" name="pushButton_69">
+        <widget class="Tile" name="tile18">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1741,7 +1786,7 @@ background-color: white;
         </widget>
        </item>
        <item row="2" column="3">
-        <widget class="QPushButton" name="pushButton_70">
+        <widget class="Tile" name="tile17">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1773,7 +1818,7 @@ background-color: white;
         </widget>
        </item>
        <item row="2" column="4">
-        <widget class="QPushButton" name="pushButton_71">
+        <widget class="Tile" name="tile16">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1802,10 +1847,13 @@ background-color: #33ff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="5">
-        <widget class="QPushButton" name="pushButton_72">
+        <widget class="Tile" name="tile15">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1837,7 +1885,7 @@ background-color: white;
         </widget>
        </item>
        <item row="1" column="4">
-        <widget class="QPushButton" name="pushButton_65">
+        <widget class="Tile" name="center05">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1866,10 +1914,13 @@ background-color: #33ff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QPushButton" name="pushButton_68">
+        <widget class="Tile" name="tile19">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1905,12 +1956,12 @@ background-color: white;
     </layout>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <layout class="QHBoxLayout" name="bottomRow">
      <property name="spacing">
       <number>0</number>
      </property>
      <item>
-      <widget class="QWidget" name="topyellow" native="true">
+      <widget class="QWidget" name="yellowSquare" native="true">
        <property name="minimumSize">
         <size>
          <width>150</width>
@@ -1943,12 +1994,9 @@ background-color: white;
          <number>0</number>
         </property>
         <item>
-         <widget class="Home" name="yellow" native="true">
+         <widget class="Home" name="yellowHome" native="true">
           <property name="type" stdset="0">
            <number>2</number>
-          </property>
-          <property name="active" stdset="0">
-           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -1956,12 +2004,12 @@ background-color: white;
       </widget>
      </item>
      <item>
-      <layout class="QGridLayout" name="gridLayout_2">
+      <layout class="QGridLayout" name="yellowWalk">
        <property name="spacing">
         <number>0</number>
        </property>
        <item row="0" column="0">
-        <widget class="QPushButton" name="pushButton_19">
+        <widget class="Tile" name="tile33">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -1993,7 +2041,7 @@ background-color: white;
         </widget>
        </item>
        <item row="1" column="2">
-        <widget class="QPushButton" name="pushButton_24">
+        <widget class="Tile" name="tile22">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2025,7 +2073,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="2">
-        <widget class="QPushButton" name="pushButton_21">
+        <widget class="Tile" name="tile21">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2057,7 +2105,7 @@ background-color: white;
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="pushButton_20">
+        <widget class="Tile" name="center14">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2086,10 +2134,13 @@ background-color: #ffff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QPushButton" name="pushButton_22">
+        <widget class="Tile" name="tile32">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2121,7 +2172,7 @@ background-color: white;
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_23">
+        <widget class="Tile" name="center13">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2150,10 +2201,13 @@ background-color: #ffff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QPushButton" name="pushButton_25">
+        <widget class="Tile" name="tile31">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2185,7 +2239,7 @@ background-color: white;
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QPushButton" name="pushButton_26">
+        <widget class="Tile" name="center12">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2214,10 +2268,13 @@ background-color: #ffff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="2" column="2">
-        <widget class="QPushButton" name="pushButton_27">
+        <widget class="Tile" name="tile23">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2249,7 +2306,7 @@ background-color: white;
         </widget>
        </item>
        <item row="3" column="0">
-        <widget class="QPushButton" name="pushButton_28">
+        <widget class="Tile" name="tile30">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2281,7 +2338,7 @@ background-color: white;
         </widget>
        </item>
        <item row="3" column="1">
-        <widget class="QPushButton" name="pushButton_29">
+        <widget class="Tile" name="center11">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2310,10 +2367,13 @@ background-color: #ffff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="3" column="2">
-        <widget class="QPushButton" name="pushButton_30">
+        <widget class="Tile" name="tile24">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2345,7 +2405,7 @@ background-color: white;
         </widget>
        </item>
        <item row="4" column="0">
-        <widget class="QPushButton" name="pushButton_31">
+        <widget class="Tile" name="tile29">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2372,12 +2432,15 @@ background-color: #ffff33;
           </size>
          </property>
          <property name="flat">
+          <bool>true</bool>
+         </property>
+         <property name="safe" stdset="0">
           <bool>true</bool>
          </property>
         </widget>
        </item>
        <item row="4" column="1">
-        <widget class="QPushButton" name="pushButton_32">
+        <widget class="Tile" name="center10">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2406,10 +2469,13 @@ background-color: #ffff33;
          <property name="flat">
           <bool>true</bool>
          </property>
+         <property name="safe" stdset="0">
+          <bool>true</bool>
+         </property>
         </widget>
        </item>
        <item row="4" column="2">
-        <widget class="QPushButton" name="pushButton_33">
+        <widget class="Tile" name="tile25">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2441,7 +2507,7 @@ background-color: white;
         </widget>
        </item>
        <item row="5" column="0">
-        <widget class="QPushButton" name="pushButton_34">
+        <widget class="Tile" name="tile28">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2473,7 +2539,7 @@ background-color: white;
         </widget>
        </item>
        <item row="5" column="1">
-        <widget class="QPushButton" name="pushButton_35">
+        <widget class="Tile" name="tile27">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2505,7 +2571,7 @@ background-color: white;
         </widget>
        </item>
        <item row="5" column="2">
-        <widget class="QPushButton" name="pushButton_36">
+        <widget class="Tile" name="tile26">
          <property name="minimumSize">
           <size>
            <width>25</width>
@@ -2539,7 +2605,7 @@ background-color: white;
       </layout>
      </item>
      <item>
-      <widget class="QWidget" name="topgreen" native="true">
+      <widget class="QWidget" name="greenSquare" native="true">
        <property name="minimumSize">
         <size>
          <width>150</width>
@@ -2572,7 +2638,7 @@ background-color: white;
          <number>0</number>
         </property>
         <item>
-         <widget class="Home" name="green" native="true">
+         <widget class="Home" name="greenHome" native="true">
           <property name="type" stdset="0">
            <number>3</number>
           </property>
@@ -2591,6 +2657,11 @@ background-color: white;
    <extends>QWidget</extends>
    <header location="global">Home.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Tile</class>
+   <extends>QPushButton</extends>
+   <header location="global">Tile.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

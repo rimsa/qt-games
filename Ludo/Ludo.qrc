@@ -1,10 +1,14 @@
 <RCC>
     <qresource prefix="/pawns">
-        <file alias="yellow">images/pawns/yellow.png</file>
-        <file alias="red">images/pawns/redx.png</file>
-        <file alias="green">images/pawns/green.png</file>
-        <file alias="blue">images/pawns/blue.png</file>
         <file alias="empty">images/pawns/empty.png</file>
+        <file alias="blueplay">images/pawns/blueplay.png</file>
+        <file alias="bluestd">images/pawns/bluestd.png</file>
+        <file alias="greenplay">images/pawns/greenplay.png</file>
+        <file alias="greenstd">images/pawns/greenstd.png</file>
+        <file alias="redplay">images/pawns/redplay.png</file>
+        <file alias="redstd">images/pawns/redstd.png</file>
+        <file alias="yellowplay">images/pawns/yellowplay.png</file>
+        <file alias="yellowstd">images/pawns/yellowstd.png</file>
     </qresource>
     <qresource prefix="/dices">
         <file alias="face6">images/dices/face6.png</file>
