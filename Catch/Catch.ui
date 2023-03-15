@@ -1,0 +1,3111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Catch</class>
+ <widget class="QMainWindow" name="Catch">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Catch</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>450</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>450</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#centralwidget {
+  background: url(':/grid');
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>25</number>
+    </property>
+    <property name="topMargin">
+     <number>25</number>
+    </property>
+    <property name="rightMargin">
+     <number>25</number>
+    </property>
+    <property name="bottomMargin">
+     <number>25</number>
+    </property>
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="Cell" name="cell00">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="Cell" name="cell01">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="Cell" name="cell02">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="Cell" name="cell03">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="Cell" name="cell04">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="Cell" name="cell05">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="Cell" name="cell06">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7">
+     <widget class="Cell" name="cell07">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="Cell" name="cell10">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="Cell" name="cell11">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="Cell" name="cell12">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="Cell" name="cell13">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="Cell" name="cell14">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="Cell" name="cell15">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="Cell" name="cell16">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="7">
+     <widget class="Cell" name="cell17">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="Cell" name="cell20">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="Cell" name="cell21">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="Cell" name="cell22">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="Cell" name="cell23">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="Cell" name="cell24">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="Cell" name="cell25">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="Cell" name="cell26">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="Cell" name="cell27">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="Cell" name="cell30">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="Cell" name="cell31">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="Cell" name="cell32">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="Cell" name="cell33">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="Cell" name="cell34">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="5">
+     <widget class="Cell" name="cell35">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="6">
+     <widget class="Cell" name="cell36">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="7">
+     <widget class="Cell" name="cell37">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>3</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="Cell" name="cell40">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="Cell" name="cell41">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="Cell" name="cell42">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="Cell" name="cell43">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="Cell" name="cell44">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="Cell" name="cell45">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="6">
+     <widget class="Cell" name="cell46">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="7">
+     <widget class="Cell" name="cell47">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>4</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="Cell" name="cell50">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="Cell" name="cell51">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="Cell" name="cell52">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="Cell" name="cell53">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4">
+     <widget class="Cell" name="cell54">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="Cell" name="cell55">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="6">
+     <widget class="Cell" name="cell56">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="7">
+     <widget class="Cell" name="cell57">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>5</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="Cell" name="cell60">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="Cell" name="cell61">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="Cell" name="cell62">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="Cell" name="cell63">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="4">
+     <widget class="Cell" name="cell64">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5">
+     <widget class="Cell" name="cell65">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="6">
+     <widget class="Cell" name="cell66">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="7">
+     <widget class="Cell" name="cell67">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>6</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="Cell" name="cell70">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="Cell" name="cell71">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="Cell" name="cell72">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="Cell" name="cell73">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>3</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="4">
+     <widget class="Cell" name="cell74">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="5">
+     <widget class="Cell" name="cell75">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="6">
+     <widget class="Cell" name="cell76">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>6</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="7">
+     <widget class="Cell" name="cell77">
+      <property name="minimumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>46</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 0px;
+}
+
+QPushButton[empty=false] {
+  background-color: #808080;
+}
+
+QPushButton[selectable=true] {
+  background-color: #00ff00;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>7</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>450</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>Jogo</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuGame"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Cell</class>
+   <extends>QPushButton</extends>
+   <header location="global">Cell.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
