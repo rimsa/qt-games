@@ -11,3 +11,4 @@ Supported games:
   - SlimeTrail
   - Alquerque
   - Squadro
+  - Catch

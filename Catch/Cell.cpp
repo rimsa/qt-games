@@ -1,6 +1,13 @@
 #include "Cell.h"
 #include <algorithm>
 
+const QList<Cell::Direction> Cell::directions =
+    QList<Cell::Direction>()
+        << Cell::North
+        << Cell::East
+        << Cell::South
+        << Cell::West;
+
 Cell::Cell(QWidget *parent)
         : QPushButton(parent),
           m_row(-1), m_col(-1),

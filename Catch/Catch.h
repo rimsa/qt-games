@@ -2,6 +2,8 @@
 #define CATCH_H
 
 #include <QMainWindow>
+#include <QList>
+#include <QSet>
 
 #include "Cell.h"
 
@@ -22,11 +24,15 @@ public:
 
 signals:
     void turnEnded();
+    void gameOver();
 
 private:
     Ui::Catch *ui;
     Player* m_player;
     Cell* m_board[8][8];
+
+    Cell* neighboor(Cell* cell, Cell::Direction dir);
+    QList<QSet<Cell*> > findClusters();
 
 private slots:
     void play(int id);
@@ -34,9 +40,13 @@ private slots:
     void reset();
 
     void showAbout();
+    void showGameOver();
 
     void updateSelectables(bool over);
+    void updateCount(Player* player);
     void updateStatusBar();
+
+    void checkGameOver();
 
 };
 

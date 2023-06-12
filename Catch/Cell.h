@@ -26,6 +26,16 @@ public:
     };
     Q_ENUM(State)
 
+    enum Direction {
+        North,
+        East,
+        South,
+        West
+    };
+    Q_ENUM(Direction)
+
+    static const QList<Cell::Direction> directions;
+
     explicit Cell(QWidget *parent = nullptr);
     virtual ~Cell();
 
