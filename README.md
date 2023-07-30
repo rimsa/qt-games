@@ -12,3 +12,4 @@ Supported games:
   - Alquerque
   - Squadro
   - Catch
+  - Teeko

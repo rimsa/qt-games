@@ -30,12 +30,24 @@ public:
 signals:
     void phaseChanged(Teeko::Phase phase);
     void turnEnded();
+    void gameOver();
 
 private:
     Ui::Teeko *ui;
     Player* m_player;
     Phase m_phase;
+    int m_dropCount;
+    Hole* m_selected;
     Hole* m_board[5][5];
+
+    void drop(Hole* hole);
+    void move(Hole* hole);
+    void clearPreviousPlay(void);
+
+    Hole* neighboor(Hole* hole, Hole::Direction dir) const;
+    bool checkWinner() const;
+    bool checkSequence(Hole* hole, Hole::Direction dir) const;
+    bool checkSquare(Hole* hole) const;
 
 private slots:
     void setPhase(Teeko::Phase phase);
@@ -45,6 +57,7 @@ private slots:
     void reset();
 
     void showAbout();
+    void showGameOver();
     void updateStatusBar();
 
 };

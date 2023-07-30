@@ -1,6 +1,17 @@
 #include "Hole.h"
 #include <algorithm>
 
+const QList<Hole::Direction> Hole::directions =
+    QList<Hole::Direction>()
+        << Hole::North
+        << Hole::NorthEast
+        << Hole::East
+        << Hole::SouthEast
+        << Hole::South
+        << Hole::SouthWest
+        << Hole::West
+        << Hole::NorthWest;
+
 Hole::Hole(QWidget *parent)
         : QPushButton(parent),
           m_row(-1), m_col(-1),

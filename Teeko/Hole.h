@@ -26,6 +26,20 @@ public:
     };
     Q_ENUM(State)
 
+    enum Direction {
+        North,
+        NorthEast,
+        East,
+        SouthEast,
+        South,
+        SouthWest,
+        West,
+        NorthWest
+    };
+    Q_ENUM(Direction)
+
+    static const QList<Hole::Direction> directions;
+
     explicit Hole(QWidget *parent = nullptr);
     virtual ~Hole();
 
